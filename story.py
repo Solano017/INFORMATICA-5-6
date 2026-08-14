@@ -25,15 +25,7 @@ def main():
     print(" ")
     print("This is your story")
     print(f"At dawn the sky turned {color}, and the air fel {adj}. I decided today I will finally {goal}.")
-
-    color2 = input("Tell me a color: ").upper().strip()
-    adj2 = input("Tell me an adjetive: ").upper().strip()
-    goal2 = input("A goal you would like to achieve: ").upper().strip()
-
-    print("Hello", name)
-    print(" ")
-    print("This is your story")
-    print(f"At dawn the sky turned {color2}, and the air fel {adj2}. I decided today I will finally {goal2}.")
+    print(f"At dawn the sky turned {color}, and the air fel {adj}. I decided today I will finally {goal}.".upper())
 
 if __name__ == "__main__":
     main()
