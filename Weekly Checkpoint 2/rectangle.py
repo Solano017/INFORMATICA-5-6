@@ -9,6 +9,8 @@ def main():
     print("Your perimeter is", Perimeter)
     Diagonal = ((5 ** 2)/5 + (width ** 2)/ width)
     print("Diagonal:", Diagonal)
+    Area = width * 5
+    print("This is your area:", Area)
 
     word = input("Enter the word to repeat: ")
     times = int(input("Enter the times to repeat the word: "))
