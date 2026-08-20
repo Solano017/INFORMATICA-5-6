@@ -13,14 +13,14 @@ def main():
     print("Remainder Division", x % y)
 
     # 4. Division with variables
-    number1 = 20
-    number2 = 5
-    result = number1 / number2
+    pieces = 20
+    persons = 5
+    result = pieces / persons
 
     print("divided by 5 =", result)
 # inputs
-    a = int(input("Enter the first number: "))
-    b = int(input("Enter the second number: "))
+    a = float(input("Enter the first number: "))
+    b = float(input("Enter the second number: "))
 
     print("Division", a / b)
     print("Whole number division:", a // b)
