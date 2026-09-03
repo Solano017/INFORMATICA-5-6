@@ -14,7 +14,7 @@ def main():
     if level == ("easy"):
         print("You selected level", level)
         guess = random.randint(1, 10)
-        print("Well,", Name, "I am thinking of a number in between 1 and 10.")
+        print(f"Well, {name}, I am thinking of a number in between 1 and 10.")
 
     if level == ("medium"):
         print("You selected level", level)
