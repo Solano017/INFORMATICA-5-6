@@ -25,13 +25,15 @@ def main():
         print("You selected level", level)
         guess = random.randint(1, 1000000)
         print("Well,", Name, "I am thinking of a number in between 1 and 1000000.")
-    while answer != "I QUIT":
-            answer = input("Take a guess: ")
+    answer = ""
+    while answer != guess:
+            answer = int(input("Take a guess: "))
             if answer < guess:
                  print("Guess to low")
             if answer > guess:
                  print("Guess to high")
             if answer == guess:
+                print("You Win!!!")
                 break
 
 if __name__ == "__main__":
