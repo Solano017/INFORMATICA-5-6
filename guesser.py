@@ -26,15 +26,23 @@ def main():
         guess = random.randint(1, 1000000)
         print("Well,", Name, "I am thinking of a number in between 1 and 1000000.")
     answer = ""
+    attempts = 6
     while answer != guess:
             answer = int(input("Take a guess: "))
             if answer < guess:
-                 print("Guess to low")
+                print("Guess too low")
+                attempts -= 1
+                print("Attemps left:", attempts)
             if answer > guess:
-                 print("Guess to high")
+                print("Guess too high")
+                attempts -= 1
+                print("Attemps left:", attempts)
+            if attempts == 0:
+                print("You lose, good game")
+                break
             if answer == guess:
                 print("You Win!!!")
                 break
-
+    print("See you soon")
 if __name__ == "__main__":
     main()
