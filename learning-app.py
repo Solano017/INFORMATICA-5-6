@@ -40,7 +40,7 @@ def main():
     print("Exponents, Multiplications, or everything")
     fate = input("Now choose your fate: ")
 
-# Under construction
+
 
 
 if __name__ == "__main__":

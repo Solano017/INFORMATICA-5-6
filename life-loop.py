@@ -1,4 +1,5 @@
 import random
+import time
 def main():
 
     print("================================")
@@ -13,23 +14,79 @@ def main():
     print("Let's make sure you have everything.")
     print()
 
+    phone = "no"
+    backpack = "no"
+    homework = "no"
+    water = "no"
+    keys = "no"
 
-    while packed < items:
+    packed = 0
+
+    while packed != 5:
+
         print("Items you still need:")
-        if items == items:
-            if items != packed:
-                print("- ", items)
-        print()
+        if phone == "no":
+            print("--phone")
+        if backpack == "no":
+            print("--backapack")
+        if homework == "no":
+            print("--homework")
+        if water == "no":
+            print("--water")
+        if keys == "no":
+            print("--keys")
+
+        print("")
 
         choice = input("What did you pack? ").strip().title()
-
-        if choice == items:
-            print("✅", choice, "is packed!")
-        elif choice == packed:
-            print("⚠️ You already packed that!")
+        if choice == "Phone":
+            if phone == "no":
+                phone = "yes"
+                packed = packed + 1
+                print("Phone Packed")
+            else:
+                print("Phone is already packed")
+        elif choice == "backpack":
+            if backpack == "no":
+                backpack == "yes"
+                packed = packed + 1
+                print("Backpack is packed")
+            else:
+                print("Backpack is already packed")
+        elif choice == "homework":
+            if homework == "no":
+                homework = "yes"
+                packed = packed + 1
+                print("Homework is packed")
+            else:
+                print("Homework is already packed")
+        elif choice == "water":
+            if water == "no":
+                backpack = "yes"
+                packed = packed + 1
+                print("Backpack is packed")
+            else:
+                print("Backpack is already packed")
+        elif choice == "keys":
+            if keys == "no":
+                keys = "yes"
+                packed = packed + 1
+                print("keys are packed")
+            else:
+                print("Keys are already packed")
+        elif choice == "":
+            print("Please enter an item name.")
         else:
-            print("❌ That's not on your list.")
-        print()
+            print("That is not on yor list")
+        if packed == 5:
+            break
+    print(" ")
+
+    print("Checking your backpack...")
+    time.sleep(2)
+
+    print("Almost ready...")
+    time.sleep(2)
 
     print("================================")
     print("🎉 EVERYTHING IS PACKED!")
