@@ -66,7 +66,7 @@ def main():
                 packed = packed + 1
                 print("Water is packed")
             else:
-                print("Backpack is already packed")
+                print("Water is already packed")
         elif choice == "Keys":
             if keys == "no":
                 keys = "yes"
