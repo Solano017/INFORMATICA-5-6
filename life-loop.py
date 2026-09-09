@@ -46,28 +46,28 @@ def main():
                 print("Phone Packed")
             else:
                 print("Phone is already packed")
-        elif choice == "backpack":
+        elif choice == "Backpack":
             if backpack == "no":
                 backpack == "yes"
                 packed = packed + 1
                 print("Backpack is packed")
             else:
                 print("Backpack is already packed")
-        elif choice == "homework":
+        elif choice == "Homework":
             if homework == "no":
                 homework = "yes"
                 packed = packed + 1
                 print("Homework is packed")
             else:
                 print("Homework is already packed")
-        elif choice == "water":
+        elif choice == "Water":
             if water == "no":
                 backpack = "yes"
                 packed = packed + 1
-                print("Backpack is packed")
+                print("Water is packed")
             else:
                 print("Backpack is already packed")
-        elif choice == "keys":
+        elif choice == "Keys":
             if keys == "no":
                 keys = "yes"
                 packed = packed + 1
