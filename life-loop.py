@@ -48,7 +48,7 @@ def main():
                 print("Phone is already packed")
         elif choice == "Backpack":
             if backpack == "no":
-                backpack == "yes"
+                backpack = "yes"
                 packed = packed + 1
                 print("Backpack is packed")
             else:
@@ -62,7 +62,7 @@ def main():
                 print("Homework is already packed")
         elif choice == "Water":
             if water == "no":
-                backpack = "yes"
+                water = "yes"
                 packed = packed + 1
                 print("Water is packed")
             else:
