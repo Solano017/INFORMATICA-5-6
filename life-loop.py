@@ -28,7 +28,7 @@ def main():
         if phone == "no":
             print("--phone")
         if backpack == "no":
-            print("--backapack")
+            print("--backpack")
         if homework == "no":
             print("--homework")
         if water == "no":
