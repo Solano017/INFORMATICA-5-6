@@ -4,7 +4,11 @@ def main():
     numbers.sort()
     print(numbers)
 
-    items = ["Lettuce", "Tomato", "Bread", "Jam", "Mayonaise"]
+    items = ["Lettuce",
+             "Tomato",
+            "Bread",
+            "Jam",
+            "Mayonaise"]
     items.sort()
     print(items)
 
