@@ -1,11 +1,10 @@
 def main():
-    print("WELCOME TO")
-    print("TO DO LIST")
+    print("WELCOME TO YOUR TO DO LIST")
     tasks = []
+    completed_tasks = []
     while True:
         print(f"You have {len(tasks)} tasks to do.")
-        t = len(tasks)
-        if t == 0:
+        if len(tasks) == 0:
             print("Waiting for tasks :)")
         else:
             print(tasks)
@@ -16,15 +15,15 @@ def main():
             if new_task not in tasks:
                 tasks.append(new_task)
             elif new_task in tasks:
-                del_confirm = input(f"Did you complete {new_task}? (y/n))
-                
+                del_confirm = input(f"Did you complete {new_task}? (y/n)")
+
         elif command == "check":
             check = input("Task to complete: ").lower()
             tasks.remove(check)
         elif command == "exit":
             break
         else:
-            continue
+            print("Invalid command, select an option")
 
 
     print("Thank you for using, see you later")
