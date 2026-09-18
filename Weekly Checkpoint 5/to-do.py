@@ -16,6 +16,9 @@ def main():
                 tasks.append(new_task)
             elif new_task in tasks:
                 del_confirm = input(f"Did you complete {new_task}? (y/n)")
+                if del_confirm == y:
+                elif del_confirm == n:
+                else:
 
         elif command == "check":
             check = input("Task to complete: ").lower()

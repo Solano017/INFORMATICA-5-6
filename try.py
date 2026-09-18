@@ -1,8 +1,5 @@
 def main():
-    while True:
-        print(f"Tasks to do: {len(tasks)}")
-        print(tasks)
-
-        new_task = input("Enter task: ")
+    bellwork ='happy' in 'Happy Friday'
+    print(bellwork)
 if __name__ == "__main__":
     main()
