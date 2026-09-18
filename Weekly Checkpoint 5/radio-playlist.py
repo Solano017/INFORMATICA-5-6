@@ -1,6 +1,5 @@
 def main():
 
-
     playlist = ["Boston", "Dracula", "I Knew You", "Hate That I Made You Love Me", "Risk It All"]
 
     print("---")
@@ -10,7 +9,7 @@ def main():
 
     print("---")
 
-    playlist.insert(0, "Bohemian Rhaspody")
+    playlist.insert(0, "Bohemian Rhapsody")
     print(playlist)
 
     print("---")
@@ -21,14 +20,18 @@ def main():
     print("---")
 
     print(playlist.index("Risk It All"))
-    print("Number of songs in the playlist:",len(playlist))
+    print("Number of songs in the playlist:", len(playlist))
 
     print("---")
 
     playlist.reverse()
     print(playlist)
 
+    print("---")
 
+    playlist.sort()
+    weekly_playlist = playlist
+    print(weekly_playlist)
 
 
 if __name__ == "__main__":
