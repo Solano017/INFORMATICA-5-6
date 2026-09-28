@@ -1,0 +1,9 @@
+hello world
+while loop description
+A while loop repeats a part of the code as long as the condition is true, it is useful when you need a loop that its uncertain how many time it will get repeated.
+
+For loop description
+A for loop repeats a part of the code with an specifi number of times or for a number of how many items there is on a list is alike to range
+
+While Loop vs For Loop
+Both loops are use to repeat code, but while loop is conditioned, for loop has a number of times for how many repetitions are needed, for example a for loop can repeat something if we use a range, and a while loop will continue until the conditions get fulfilled
