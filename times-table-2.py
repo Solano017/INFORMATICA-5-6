@@ -1,8 +1,8 @@
 def main():
     print("-----------Kahoot-----------")
     print("Welcome to: Times Table Quiz")
-    trye = True
-    while True:
+    trye = 0
+    while trye == 0:
         while True:
             try:
                 times_table = int(input("Enter a times table you would like to get tested from 1 to 10: "))
@@ -29,19 +29,21 @@ def main():
                             print(f"{x} times {times_table} is {answer}")
                             print("Correct")
                             score += 1
-                            print(f"actual score is: {score} / {max_value}")
+                            print(f"actual score is: {score} / {max_value - 1}")
                         else:
                             print(f"{x} times {times_table} is {answer}")
                             print("Incorrect")
-                            print(f"actual score is: {score} / {max_value}")
+                            print(f"actual score is: {score} / {max_value - 1}")
                     except ValueError:
                         print("Invalid")
                 break
+            trye += 1
 
         else:
             print("Times Table has to be between 1 to 10, not higher nor lower.")
             print("Try again pls")
-            trye = False
+    print("See you later, gg")
+
 
 if __name__ == "__main__":
     main()
