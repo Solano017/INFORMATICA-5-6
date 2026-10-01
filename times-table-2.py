@@ -14,7 +14,7 @@ def main():
             break
         except ValueError:
             print("Please enter a number")
-
+    score = 0
     if 1 <= times_table <= 10:
         print(f"Here is your quiz on the {times_table} times table")
         while True:
@@ -26,10 +26,12 @@ def main():
                     if user_answer == answer:
                         print(f"{x} times {times_table} is {answer}")
                         print("Correct")
-
+                        score += 1
+                        print(f"your score is, {score}")
                     else:
                         print(f"{x} times {times_table} is {answer}")
                         print("Incorrect")
+                        print(f"actual score is: {score}")
                 except ValueError:
                     print("Invalid")
             break
