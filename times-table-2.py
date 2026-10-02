@@ -1,12 +1,16 @@
 def main():
-    print("-----------Kahoot-----------")
+    print("-----------Hakoot-----------")
     print("Welcome to: Times Table Quiz")
     trye = 0
     while trye == 0:
         while True:
             try:
                 times_table = int(input("Enter a times table you would like to get tested from 1 to 10: "))
-                break
+                if 1 >= times_table >= 10:
+                    print("not a number in between")
+                elif 1 <= times_table <= 10:
+
+                    break
             except ValueError:
                 print("please enter a number")
         while True:
@@ -17,31 +21,32 @@ def main():
             except ValueError:
                 print("Please enter a number")
         score = 0
-        if 1 <= times_table <= 10:
-            print(f"Here is your quiz on the {times_table} times table")
-            while True:
-                for x in range(1, max_value):
+
+        print(f"Here is your quiz on the {times_table} times table")
+        while True:
+            for x in range(1, max_value):
+                while True:
                     try:
                         answer = x * times_table
                         print(f"{times_table} times {x} is equal to?")
                         user_answer = int(input("Answer: "))
                         if user_answer == answer:
-                            print(f"{x} times {times_table} is {answer}")
+                            print(f"{times_table} times {x} is {answer}")
                             print("Correct")
                             score += 1
                             print(f"actual score is: {score} / {max_value - 1}")
+                            break
                         else:
-                            print(f"{x} times {times_table} is {answer}")
+                            print(f"{times_table} times {x} is {answer}")
                             print("Incorrect")
                             print(f"actual score is: {score} / {max_value - 1}")
+                            break
                     except ValueError:
                         print("Invalid")
-                break
-            trye += 1
+            break
+        trye += 1
 
-        else:
-            print("Times Table has to be between 1 to 10, not higher nor lower.")
-            print("Try again pls")
+
     print("See you later, gg")
 
 
