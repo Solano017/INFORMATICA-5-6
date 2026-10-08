@@ -7,3 +7,81 @@ A for loop repeats a part of the code with an specifi number of times or for a n
 
 While Loop vs For Loop
 Both loops are use to repeat code, but while loop is conditioned, for loop has a number of times for how many repetitions are needed, for example a for loop can repeat something if we use a range, and a while loop will continue until the conditions get fulfilled
+
+
+
+
+## Learning Objective
+
+Students will be able to apply skills learned in Python to solve a real-world scenario.
+
+---
+
+<aside>
+💪
+
+## Test
+
+### Binary Numbers
+
+The binary number system is a base-2 number system. This means it only has two numbers: 0 and 1. The number system that we normally use is the decimal number system. It has 10 numbers: 0-9.
+
+#### **Why use binary numbers?**
+
+Binary numbers are very useful in electronics and computer systems. Digital electronics can easily work with a sort of "on" or "off" system where "on" is a 1 and "off" is a zero. Often times the 1 is a "high" voltage, while the 0 is a "low" voltage or ground.
+
+#### **How do binary numbers work?**
+
+Binary numbers only use the numbers 1 and 0. In a binary number each "place" represents a power of 2. For example:
+
+$$
+1 = 2^0 \to\ 1 \\
+10 = 2^1 \to\ 2 \\
+100 = 2^2 \to\ 4 \\
+1000 = 2^3 \to\ 8 \\
+10000 = 2^4 \to\ 16 \\
+$$
+
+#### **Converting from Binary to Decimal**
+
+If you want to convert a number from binary to decimal, you can add up the "places" that we showed above. Each place that has a "1" represents a power of 2, starting with the 0s place.
+
+!image.png
+
+Examples:
+
+$$
+101 \ binary = 4 + 0 + 1= 5 \ decimal\\
+11110 \ binary = 16 + 8 + 4 + 2 + 0 = 30 \ decimal \\
+10001 \ binary = 16 + 0 + 0 + 0 + 1 = 17 \ decimal
+$$
+
+### Test Steps
+
+1. Create a new file with the name `binary.py`. (1 point)
+2. Define two functions:
+    1. `main`, with 0 parameters. (1 point)
+    2. `binary_to_decimal`, with 1 parameter. (1 point)
+3. Complete the `binary_to_decimal` function to turn the given binary number as an argument into a decimal number, and then print the result in the terminal. (3 points)
+4. The `main` function should:
+    - Welcome the user and explain the purpose of the program. (1 point)
+    - Ask for a binary number. Make sure to handle scenarios where the user types in a different kind of answer from the one you were expecting. (2 points)
+    - After asking for the binary number, call the `binary_to_decimal` with the number given by the user as the argument. (1 point)
+
+### Expected Output
+
+```
+Binary to Decimal Converter
+*[The purpose of your program here.]*
+
+Enter a binary number: 1101 <- This is the user input
+Decimal number: 13
+```
+
+### Submit Your Work
+
+Download your file, and commit your file to your repository.
+
+**Submit the downloaded file. Add a comment with the link to the file in your GitHub repository.**
+
+</aside>
