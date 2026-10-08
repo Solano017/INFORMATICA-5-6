@@ -8,21 +8,31 @@ def main(): # 2 point
     knowledge on python to fulfill the user necessity.
     """) # 1 point
     while True:
-        try:
-            bnumber = int(input("Enter a binary number: ")) # 1 or 2
-            break
-        except ValueError:
-            print("We need to use numbers")
+        bnumber = input("Enter a binary number: ")
+        is_valid = True
+        if bnumber == "":
+            is_valid = False
+        else:
+            for char in bnumber:
+                if char not in ['0', '1']:
+                    is_valid = False
+                    break
 
+        if is_valid:
+            break
+        else:
+            print("Not valid, enter a valid input")
 
 
     binary_to_decimal(bnumber)
-def binary_to_decimal(bnumber): #2 point
-    print("Now this is your binary number to decimal number")
-    num1 = bnumber[0]
-    num2 = bnumber[1]
-    print(num1)
-    print(num2)
+def binary_to_decimal(bnumber):
+    decimal = 0
+    power = len(bnumber) - 1
+
+    for digit in bnumber:
+        decimal += int(digit) * (2 ** power)
+        power -= 1
+    print(f"Answer: {decimal}")
 
 if __name__ == "__main__":
     main()
