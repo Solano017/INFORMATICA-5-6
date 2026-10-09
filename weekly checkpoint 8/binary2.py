@@ -13,14 +13,12 @@ def main():
         else:
             print("Invalid input")
 
-
-
-binary_to_decimal(binary_number)
+    binary_to_decimal(binary_number)
 def binary_to_decimal(binary):
     decimal = 0
     for bit in binary:
         decimal = (decimal * 2) + int(bit)
     print(decimal)
-    
+
 if __name__ == "__main__":
-main()
+    main()
