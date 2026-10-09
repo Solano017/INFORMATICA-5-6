@@ -11,7 +11,7 @@ def main():
         if correct_chars == len(binary_number):
             break
         else:
-            print("Invalid input")
+            print("Invalid input.")
 
     binary_to_decimal(binary_number)
 def binary_to_decimal(binary):
