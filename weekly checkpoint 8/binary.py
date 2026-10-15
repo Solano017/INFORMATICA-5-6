@@ -14,7 +14,7 @@ def main(): # 2 point
             is_valid = False
         else:
             for char in bnumber:
-                if char not in ['0', '1']:
+                if char not in ["0", "1"]:
                     is_valid = False
                     break
 
