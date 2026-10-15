@@ -20,28 +20,28 @@ def start_game(file):
             else:
                 print ("Invalid guess. Try again.")
 
-            if guess in word and guess not in hint:
-                for i in range(len(word)):
-                    if word[i] == guess:
-                        hint[i] = guess
-                print("Great guess!")
-            elif guess in hint:
-                attempts-= 1
-                print("You already guessed that letter, Attempts left", str(attempts))
-            else:
-                attempts -= 1
-                print("Wrong guess, attempts left:", str(attempts))
-                if guess not in incorrect_letters:
-                    incorrect_letters.append(guess)
-                print(f"incorrect letters:  {" ".join(incorrect_letters)}")
+        if guess in word and guess not in hint:
+            for i in range(len(word)):
+                if word[i] == guess:
+                    hint[i] = guess
+            print("Great guess!")
+        elif guess in hint:
+            attempts-= 1
+            print("You already guessed that letter, Attempts left", str(attempts))
+        else:
+            attempts -= 1
+            print("Wrong guess, attempts left:", str(attempts))
+            if guess not in incorrect_letters:
+                incorrect_letters.append(guess)
+            print(f"incorrect letters:  {" ".join(incorrect_letters)}")
 
-            if "_" not in hint:
-                print("Congratulations, you guessed the word:", word)
-                break
+        if "_" not in hint:
+            print("Congratulations, you guessed the word:", word)
+            break
 
 
-            if attempts == 0 and "_" in hint:
-                print("No attempts left, the owrd was", word)
+        if attempts == 0 and "_" in hint:
+            print("No attempts left, the word was", word)
 
 
 if __name__ == "__main__":
