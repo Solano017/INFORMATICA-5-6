@@ -33,7 +33,7 @@ def start_game(file):
                 print("Wrong guess, attempts left:", str(attempts))
                 if guess not in incorrect_letters:
                     incorrect_letters.append(guess)
-                print(f"incorrect letters: " {" ".join(incorrect_letters)})
+                print(f"incorrect letters:  {" ".join(incorrect_letters)}")
 
             if "_" not in hint:
                 print("Congratulations, you guessed the word:", word)
